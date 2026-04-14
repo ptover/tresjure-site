@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tresjure Cross Mills — Author, Speaker, Creator</title>
+  <meta name="description" content="Tresjure Cross Mills is an award-winning author of self-reflection journals, fitness planners, and motivational books. Explore her collection and start your journey of self-discovery.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --color-bg: #faf9f7;
+      --color-white: #ffffff;
+      --color-text: rgba(0,0,0,0.90);
+      --color-text-secondary: #615d59;
+      --color-text-muted: #a39e98;
+      --color-accent: #8B6F4E;
+      --color-accent-dark: #6B5438;
+      --color-accent-light: #C9A96E;
+      --color-warm-white: #f6f5f4;
+      --color-warm-cream: #F0EBE3;
+      --color-dark: #2C2520;
+      --color-dark-warm: #31302e;
+      --border-whisper: 1px solid rgba(0,0,0,0.08);
+      --shadow-card: rgba(0,0,0,0.04) 0px 4px 18px, rgba(0,0,0,0.027) 0px 2px 8px, rgba(0,0,0,0.02) 0px 1px 3px;
+      --shadow-deep: rgba(0,0,0,0.03) 0px 4px 24px, rgba(0,0,0,0.04) 0px 12px 48px;
+      --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--color-text);
+      background: var(--color-bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ===== NAVIGATION ===== */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(250, 249, 247, 0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: var(--border-whisper);
+      transition: all 0.3s ease;
+    }
+
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--color-dark);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+
+    .nav-links a:hover { color: var(--color-accent); }
+
+    .nav-cta {
+      background: var(--color-accent) !important;
+      color: var(--color-white) !important;
+      padding: 10px 24px;
+      border-radius: 6px;
+      font-weight: 600 !important;
+      text-transform: uppercase !important;
+      font-size: 13px !important;
+      letter-spacing: 0.8px !important;
+      transition: all 0.3s !important;
+      display: inline-block;
+    }
+
+    .nav-cta:hover {
+      background: var(--color-accent-dark) !important;
+      transform: translateY(-1px);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    .mobile-menu-btn span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--color-dark);
+      margin: 5px 0;
+      transition: all 0.3s;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 24px 80px;
+      background: linear-gradient(180deg, var(--color-warm-cream) 0%, var(--color-bg) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -120px;
+      right: -120px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(139,111,78,0.06) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -80px;
+      left: -80px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(201,169,110,0.05) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .hero-inner {
+      max-width: 900px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(139,111,78,0.1);
+      color: var(--color-accent);
+      padding: 6px 16px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(40px, 7vw, 72px);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -1.5px;
+      color: var(--color-dark);
+      margin-bottom: 24px;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--color-accent);
+    }
+
+    .hero-subtitle {
+      font-size: clamp(16px, 2.5vw, 20px);
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--color-text-secondary);
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--color-accent);
+      color: var(--color-white);
+      padding: 16px 36px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      background: var(--color-accent-dark);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-deep);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--color-accent);
+      padding: 16px 36px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      transition: all 0.3s;
+      border: 2px solid var(--color-accent);
+      cursor: pointer;
+    }
+
+    .btn-secondary:hover {
+      background: var(--color-accent);
+      color: var(--color-white);
+      transform: translateY(-2px);
+    }
+
+    /* ===== ABOUT ===== */
+    .about {
+      padding: 100px 24px;
+      background: var(--color-white);
+    }
+
+    .about-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .about-image {
+      position: relative;
+    }
+
+    .about-image-frame {
+      width: 100%;
+      aspect-ratio: 3/4;
+      background: linear-gradient(135deg, var(--color-warm-cream) 0%, var(--color-accent-light) 100%);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-image-frame .initials {
+      font-family: var(--font-display);
+      font-size: 80px;
+      font-weight: 700;
+      color: var(--color-white);
+      opacity: 0.8;
+      letter-spacing: -2px;
+    }
+
+    .about-image-accent {
+      position: absolute;
+      top: -16px;
+      right: -16px;
+      width: 80px;
+      height: 80px;
+      background: var(--color-accent);
+      border-radius: 50%;
+      opacity: 0.15;
+    }
+
+    .about-content .section-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-bottom: 16px;
+    }
+
+    .about-content h2 {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 4vw, 44px);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -1px;
+      color: var(--color-dark);
+      margin-bottom: 24px;
+    }
+
+    .about-content p {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--color-text-secondary);
+      margin-bottom: 16px;
+    }
+
+    .about-credentials {
+      display: flex;
+      gap: 24px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+
+    .credential {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      background: var(--color-warm-white);
+      border-radius: 8px;
+      border: var(--border-whisper);
+    }
+
+    .credential-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--color-accent);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 16px;
+    }
+
+    .credential-text {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--color-dark);
+      line-height: 1.3;
+    }
+
+    .credential-text small {
+      display: block;
+      font-weight: 400;
+      color: var(--color-text-muted);
+      font-size: 11px;
+    }
+
+    /* ===== BOOKS ===== */
+    .books {
+      padding: 100px 24px;
+      background: var(--color-bg);
+    }
+
+    .books-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .section-header .section-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-bottom: 16px;
+    }
+
+    .section-header h2 {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+      color: var(--color-dark);
+      margin-bottom: 16px;
+    }
+
+    .section-header p {
+      font-size: 17px;
+      color: var(--color-text-secondary);
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Featured Book */
+    .featured-book {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 56px;
+      align-items: center;
+      background: var(--color-white);
+      border-radius: 20px;
+      padding: 48px;
+      border: var(--border-whisper);
+      box-shadow: var(--shadow-card);
+      margin-bottom: 48px;
+    }
+
+    .featured-book-cover {
+      position: relative;
+    }
+
+    .book-cover-wrapper {
+      background: linear-gradient(135deg, #E8D5B7 0%, #D4B896 50%, #C9A96E 100%);
+      border-radius: 12px;
+      padding: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: 3/4;
+      box-shadow: rgba(0,0,0,0.1) 8px 8px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .book-cover-wrapper::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 1px;
+      height: 100%;
+      background: rgba(0,0,0,0.08);
+    }
+
+    .book-cover-text {
+      text-align: center;
+      color: var(--color-white);
+      padding: 20px;
+    }
+
+    .book-cover-text h3 {
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 8px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .book-cover-text p {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      opacity: 0.85;
+    }
+
+    .featured-book-info .book-badge {
+      display: inline-block;
+      background: #FFF3E0;
+      color: #E65100;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .featured-book-info h3 {
+      font-family: var(--font-display);
+      font-size: clamp(26px, 3vw, 34px);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+      color: var(--color-dark);
+      margin-bottom: 8px;
+    }
+
+    .featured-book-info .book-author {
+      font-size: 15px;
+      color: var(--color-accent);
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .featured-book-info .book-description {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--color-text-secondary);
+      margin-bottom: 24px;
+    }
+
+    .book-meta {
+      display: flex;
+      gap: 24px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+
+    .book-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      color: var(--color-text-secondary);
+    }
+
+    .book-meta-item strong {
+      color: var(--color-dark);
+      font-weight: 600;
+    }
+
+    .star-rating {
+      color: #F59E0B;
+      font-size: 16px;
+      letter-spacing: 2px;
+    }
+
+    .book-price {
+      font-family: var(--font-display);
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--color-dark);
+      margin-bottom: 24px;
+    }
+
+    .book-price small {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--color-text-muted);
+      font-family: var(--font-body);
+    }
+
+    /* Other Books Grid */
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 32px;
+    }
+
+    .book-card {
+      background: var(--color-white);
+      border-radius: 16px;
+      border: var(--border-whisper);
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+      transition: all 0.3s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .book-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-deep);
+    }
+
+    .book-card-cover {
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .book-card-cover.pink {
+      background: linear-gradient(135deg, #FF6B9D 0%, #FF2D78 100%);
+    }
+
+    .book-card-cover.tan {
+      background: linear-gradient(135deg, #D4B896 0%, #C9A96E 100%);
+    }
+
+    .book-card-cover-text {
+      text-align: center;
+      color: white;
+      padding: 24px;
+    }
+
+    .book-card-cover-text h4 {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.2;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .book-card-cover-text p {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      opacity: 0.85;
+      margin-top: 4px;
+    }
+
+    .book-card-body {
+      padding: 24px;
+    }
+
+    .book-card-body h4 {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.3;
+      color: var(--color-dark);
+      margin-bottom: 8px;
+    }
+
+    .book-card-body .desc {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--color-text-secondary);
+      margin-bottom: 16px;
+    }
+
+    .book-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .book-card-price {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--color-dark);
+    }
+
+    .book-card-btn {
+      background: var(--color-accent);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      transition: all 0.3s;
+      display: inline-block;
+    }
+
+    .book-card-btn:hover {
+      background: var(--color-accent-dark);
+    }
+
+    /* ===== QUOTE ===== */
+    .quote-section {
+      padding: 100px 24px;
+      background: var(--color-dark);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .quote-section::before {
+      content: '\201C';
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: var(--font-display);
+      font-size: 300px;
+      color: rgba(255,255,255,0.03);
+      line-height: 1;
+    }
+
+    .quote-inner {
+      max-width: 700px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .quote-inner blockquote {
+      font-family: var(--font-display);
+      font-size: clamp(24px, 3.5vw, 36px);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.4;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 24px;
+    }
+
+    .quote-inner cite {
+      font-family: var(--font-body);
+      font-style: normal;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-accent-light);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* ===== CTA SECTION ===== */
+    .cta-section {
+      padding: 100px 24px;
+      background: linear-gradient(135deg, var(--color-warm-cream) 0%, var(--color-bg) 100%);
+      text-align: center;
+    }
+
+    .cta-inner {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .cta-inner h2 {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+      color: var(--color-dark);
+      margin-bottom: 16px;
+    }
+
+    .cta-inner p {
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--color-text-secondary);
+      margin-bottom: 36px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      padding: 48px 24px;
+      background: var(--color-dark);
+      text-align: center;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-logo {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--color-warm-cream);
+      margin-bottom: 16px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      list-style: none;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--color-accent-light); }
+
+    .footer-copyright {
+      font-size: 13px;
+      color: rgba(255,255,255,0.3);
+    }
+
+    /* ===== ANIMATIONS ===== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .mobile-menu-btn { display: block; }
+      
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--color-white);
+        padding: 24px;
+        border-bottom: var(--border-whisper);
+        box-shadow: var(--shadow-card);
+        gap: 16px;
+      }
+
+      .hero { padding: 100px 20px 60px; min-height: auto; }
+
+      .about-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .about-image { max-width: 300px; margin: 0 auto; }
+
+      .featured-book {
+        grid-template-columns: 1fr;
+        padding: 24px;
+        gap: 32px;
+      }
+
+      .books-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-credentials {
+        flex-direction: column;
+      }
+
+      .book-meta {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn-primary, .btn-secondary {
+        width: 100%;
+        justify-content: center;
+        max-width: 300px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 { letter-spacing: -0.5px; }
+      .featured-book { padding: 20px; }
+      .book-card-body { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Tresjure</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="https://www.amazon.com/stores/Tresjure-Cross-Mills/author/B0D7QSCW2Z" target="_blank" class="nav-cta">Shop on Amazon</a></li>
+      </ul>
+      <button class="mobile-menu-btn" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">Author &bull; Speaker &bull; Creator</div>
+      <h1>Nurturing Souls,<br><em>Unleashing Potential</em></h1>
+      <p class="hero-subtitle">Tresjure Cross Mills is an award-winning author helping women unlock their maximum potential through guided self-reflection, fitness, and personal growth.</p>
+      <div class="hero-buttons">
+        <a href="https://www.amazon.com/stores/Tresjure-Cross-Mills/author/B0D7QSCW2Z" target="_blank" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          Shop Books on Amazon
+        </a>
+        <a href="#books" class="btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+          Explore the Collection
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about-inner fade-in">
+      <div class="about-image">
+        <div class="about-image-frame">
+          <span class="initials">TCM</span>
+        </div>
+        <div class="about-image-accent"></div>
+      </div>
+      <div class="about-content">
+        <div class="section-label">About the Author</div>
+        <h2>Meet Tresjure<br>Cross Mills</h2>
+        <p>A passionate creator dedicated to empowering others through the written word. Tresjure achieved her Associate of Arts in Creative Communication with honors, graduating in the top 16% of her college.</p>
+        <p>As a proud member of the Phi Theta Kappa honor society, she brings academic excellence and heartfelt motivation to every page she writes. Her work spans self-reflection journals, fitness planners, and beautifully designed stationery.</p>
+        <div class="about-credentials">
+          <div class="credential">
+            <div class="credential-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 4 3 6 3s6-1 6-3v-5"></path></svg>
+            </div>
+            <div class="credential-text">
+              Honors Graduate
+              <small>Top 16% of class</small>
+            </div>
+          </div>
+          <div class="credential">
+            <div class="credential-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="credential-text">
+              Phi Theta Kappa
+              <small>Honor Society Member</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Books -->
+  <section class="books" id="books">
+    <div class="books-inner">
+      <div class="section-header fade-in">
+        <div class="section-label">The Collection</div>
+        <h2>Books &amp; Journals</h2>
+        <p>Thoughtfully crafted guides for self-discovery, fitness, and everyday creativity.</p>
+      </div>
+
+      <!-- Featured Book: Nurturing the Soul -->
+      <div class="featured-book fade-in">
+        <div class="featured-book-cover">
+          <div class="book-cover-wrapper">
+            <div class="book-cover-text">
+              <h3>Nurturing<br>the Soul</h3>
+              <p>Tresjure Cross Mills</p>
+            </div>
+          </div>
+        </div>
+        <div class="featured-book-info">
+          <span class="book-badge">&#9733; Bestseller</span>
+          <h3>Nurturing the Soul</h3>
+          <div class="book-author">by Tresjure Cross Mills</div>
+          <p class="book-description">Unleash your maximum potential through 30 days of guided self-reflection. This beautifully designed journal provides a quiet space for self-discovery, helping you embrace challenges and celebrate triumphs on the path to becoming your best self.</p>
+          <div class="book-meta">
+            <div class="book-meta-item">
+              <span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <strong>5.0</strong> rating
+            </div>
+            <div class="book-meta-item">
+              <strong>Paperback</strong> &bull; 30-day guided journal
+            </div>
+          </div>
+          <div class="book-price">$10.10 <small>paperback</small></div>
+          <a href="https://www.amazon.com/stores/Tresjure-Cross-Mills/author/B0D7QSCW2Z" target="_blank" class="btn-primary">
+            Buy on Amazon
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Other Books -->
+      <div class="books-grid">
+        <!-- Glow Mode -->
+        <a href="https://www.amazon.com/stores/Tresjure-Cross-Mills/author/B0D7QSCW2Z" target="_blank" class="book-card fade-in">
+          <div class="book-card-cover pink">
+            <div class="book-card-cover-text">
+              <h4>Glow<br>Mode</h4>
+              <p>90-Day Fitness Journal</p>
+            </div>
+          </div>
+          <div class="book-card-body">
+            <h4>Glow Mode: A 90-Day Fitness Journal</h4>
+            <p class="desc">For the woman who moves with purpose. Track your movement, nutrition, mindset, and progress with daily check-ins, macro guidance, affirmations, and wellness reflections.</p>
+            <div class="book-card-footer">
+              <span class="book-card-price">$12.99</span>
+              <span class="book-card-btn">Shop Now</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Composition Notebook -->
+        <a href="https://www.amazon.com/stores/Tresjure-Cross-Mills/author/B0D7QSCW2Z" target="_blank" class="book-card fade-in">
+          <div class="book-card-cover tan">
+            <div class="book-card-cover-text">
+              <h4>Savvy<br>Stationery</h4>
+              <p>College Ruled Notebook</p>
+            </div>
+          </div>
+          <div class="book-card-body">
+            <h4>Composition Notebook — College Ruled</h4>
+            <p class="desc">100 pages of college-ruled writing space in a classic 7.5 x 9.25 format. Perfect for school, work, or everyday notes. Available in multiple warm-toned cover designs.</p>
+            <div class="book-card-footer">
+              <span class="book-card-price">$11.99</span>
+              <span class="book-card-btn">Shop Now</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <section class="quote-section">
+    <div class="quote-inner fade-in">
+      <blockquote>"Your journey of self-discovery begins with a single moment of reflection. Give yourself permission to grow."</blockquote>
+      <cite>— Tresjure Cross Mills</cite>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner fade-in">
+      <h2>Start Your Journey Today</h2>
+      <p>Whether you're looking for guided self-reflection, a fitness accountability partner, or just a beautiful notebook — Tresjure has something for you.</p>
+      <a href="https://www.amazon.com/stores/Tresjure-Cross-Mills/author/B0D7QSCW2Z" target="_blank" class="btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        Visit the Amazon Store
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Tresjure Cross Mills</div>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="https://www.amazon.com/stores/Tresjure-Cross-Mills/author/B0D7QSCW2Z" target="_blank">Amazon Store</a></li>
+      </ul>
+      <div class="footer-copyright">&copy; 2026 Tresjure Cross Mills. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
