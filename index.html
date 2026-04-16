@@ -4,9 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tresjure Cross Mills — Author, Speaker, Creator</title>
-  <meta name="description" content="Tresjure Cross Mills is an award-winning author of self-reflection journals, fitness planners, and motivational books. Explore her collection and start your journey of self-discovery.">
+  <meta name="description" content="Explore the world of Tresjure Cross Mills — author, speaker, and creator of guided journals, wellness tools, and lifestyle brands rooted in reflection, growth, and purpose.">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="canonical" href="https://tresjure.com/">
+  <meta property="og:title" content="Tresjure Cross Mills — Author, Speaker, Creator">
+  <meta property="og:description" content="Guided journals, wellness tools, and creator-led brands designed to inspire reflection, growth, and purpose.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tresjure.com/">
+  <meta property="og:image" content="https://tresjure.com/images/tresjure-photo.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tresjure Cross Mills — Author, Speaker, Creator">
+  <meta name="twitter:description" content="Guided journals, wellness tools, and creator-led brands designed to inspire reflection, growth, and purpose.">
+  <meta name="twitter:image" content="https://tresjure.com/images/tresjure-photo.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -260,6 +270,100 @@
       color: var(--color-white);
       transform: translateY(-2px);
     }
+
+    .hero-link-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .hero-link-row a {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      color: var(--color-dark);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(44, 37, 32, 0.18);
+      padding-bottom: 3px;
+      transition: all 0.25s ease;
+    }
+
+    .hero-link-row a:hover {
+      color: var(--color-accent);
+      border-color: var(--color-accent);
+    }
+
+    /* ===== BRAND PILLARS ===== */
+    .pillars {
+      padding: 0 24px 24px;
+      background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-white) 100%);
+    }
+
+    .pillars-inner {
+      max-width: 1200px;
+      margin: -44px auto 0;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .pillar-card {
+      background: rgba(255,255,255,0.86);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(139,111,78,0.12);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .pillar-card h3 {
+      font-family: var(--font-display);
+      font-size: 24px;
+      line-height: 1.15;
+      color: var(--color-dark);
+      margin-bottom: 10px;
+    }
+
+    .pillar-card p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--color-text-secondary);
+      margin-bottom: 16px;
+    }
+
+    .pillar-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.7px;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-bottom: 14px;
+    }
+
+    .pillar-kicker::before {
+      content: ;
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+      opacity: 0.5;
+    }
+
+    .pillar-link {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--color-accent-dark);
+      text-decoration: none;
+    }
+
+    .pillar-link:hover { color: var(--color-accent); }
 
     /* ===== ABOUT ===== */
     .about {
@@ -674,6 +778,78 @@
       background: var(--color-accent-dark);
     }
 
+    /* ===== BRAND ECOSYSTEM ===== */
+    .ecosystem {
+      padding: 0 24px 100px;
+      background: linear-gradient(180deg, var(--color-white) 0%, var(--color-bg) 100%);
+    }
+
+    .ecosystem-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .ecosystem-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .ecosystem-card {
+      background: var(--color-white);
+      border: var(--border-whisper);
+      border-radius: 18px;
+      padding: 28px;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: var(--shadow-card);
+      transition: all 0.3s ease;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .ecosystem-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-deep);
+      border-color: rgba(139,111,78,0.26);
+    }
+
+    .ecosystem-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
+      background: rgba(139,111,78,0.12);
+      color: var(--color-accent-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .ecosystem-card h3 {
+      font-family: var(--font-display);
+      font-size: 24px;
+      color: var(--color-dark);
+      margin-bottom: 12px;
+    }
+
+    .ecosystem-card p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--color-text-secondary);
+      margin-bottom: 18px;
+    }
+
+    .ecosystem-card span {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--color-accent);
+    }
+
     /* ===== QUOTE ===== */
     .quote-section {
       padding: 100px 24px;
@@ -749,6 +925,13 @@
       line-height: 1.6;
       color: var(--color-text-secondary);
       margin-bottom: 36px;
+    }
+
+    .cta-actions {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
     }
 
     /* ===== FOOTER ===== */
@@ -965,10 +1148,36 @@
         align-items: center;
       }
 
+      .hero-link-row {
+        gap: 12px;
+      }
+
+      .pillars-inner {
+        grid-template-columns: 1fr;
+        margin-top: -24px;
+      }
+
+      .pillar-card {
+        padding: 24px;
+      }
+
+      .ecosystem {
+        padding-bottom: 72px;
+      }
+
+      .ecosystem-card {
+        min-height: 0;
+      }
+
       .btn-primary, .btn-secondary {
         width: 100%;
         justify-content: center;
         max-width: 300px;
+      }
+
+      .cta-actions {
+        flex-direction: column;
+        align-items: center;
       }
     }
 
@@ -976,6 +1185,7 @@
       .hero h1 { letter-spacing: -0.5px; }
       .featured-book { padding: 20px; }
       .book-card-body { padding: 20px; }
+      .pillars { padding-left: 20px; padding-right: 20px; }
     }
   </style>
 </head>
@@ -1004,7 +1214,7 @@
     <div class="hero-inner">
       <div class="hero-badge">Author &bull; Speaker &bull; Creator</div>
       <h1>Nurturing Souls,<br><em>Unleashing Potential</em></h1>
-      <p class="hero-subtitle">Tresjure Cross Mills is an award-winning author helping women unlock their maximum potential through guided self-reflection, fitness, and personal growth.</p>
+      <p class="hero-subtitle">Tresjure Cross Mills creates guided journals, wellness tools, and lifestyle experiences that help women move with clarity, confidence, and purpose.</p>
       <div class="hero-buttons">
         <a href="https://www.amazon.com/stores/Tresjure-Cross-Mills/author/B0D7QSCW2Z" target="_blank" class="btn-primary">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
@@ -1015,6 +1225,41 @@
           Explore the Collection
         </a>
       </div>
+      <div class="hero-link-row">
+        <a href="https://www.linkedin.com/in/trtresjurecrossmills" target="_blank">Connect on LinkedIn</a>
+        <a href="https://instagram.com/officialtresjure/" target="_blank">Follow on Instagram</a>
+        <a href="mailto:tresjuremills@gmail.com">Book a collaboration</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Pillars -->
+  <section class="pillars">
+    <div class="pillars-inner fade-in">
+      <article class="pillar-card">
+        <div>
+          <div class="pillar-kicker">Reflection</div>
+          <h3>Guided growth for everyday life</h3>
+          <p>From self-discovery prompts to mindset-building pages, Tresjure creates thoughtful tools that help readers reconnect with themselves and move forward with intention.</p>
+        </div>
+        <a href="#books" class="pillar-link">Explore the books &rarr;</a>
+      </article>
+      <article class="pillar-card">
+        <div>
+          <div class="pillar-kicker">Wellness</div>
+          <h3>Fitness and accountability with purpose</h3>
+          <p>Her wellness journals are designed to support consistent habits, intentional movement, and a stronger relationship with personal care.</p>
+        </div>
+        <a href="#books" class="pillar-link">View the wellness collection &rarr;</a>
+      </article>
+      <article class="pillar-card">
+        <div>
+          <div class="pillar-kicker">Lifestyle</div>
+          <h3>A creator ecosystem built to inspire</h3>
+          <p>Beyond the page, Tresjure connects books, social storytelling, professional presence, and beauty-forward branding into one elevated personal platform.</p>
+        </div>
+        <a href="#connect" class="pillar-link">See where to connect &rarr;</a>
+      </article>
     </div>
   </section>
 
@@ -1030,8 +1275,8 @@
       <div class="about-content">
         <div class="section-label">About the Author</div>
         <h2>Meet Tresjure<br>Cross Mills</h2>
-        <p>A passionate creator dedicated to empowering others through the written word. Tresjure achieved her Associate of Arts in Creative Communication with honors, graduating in the top 16% of her college.</p>
-        <p>As a proud member of the Phi Theta Kappa honor society, she brings academic excellence and heartfelt motivation to every page she writes. Her work spans self-reflection journals, fitness planners, and beautifully designed stationery.</p>
+        <p>Tresjure Cross Mills is a multidisciplinary creator dedicated to helping women grow through reflection, wellness, and purposeful living. She earned her Associate of Arts in Creative Communication with honors, graduating in the top 16% of her class.</p>
+        <p>As a proud member of the Phi Theta Kappa honor society, she pairs academic excellence with heartfelt encouragement. Her brand world spans guided journals, fitness planners, stationery, beauty-centered services, and a growing professional presence across social and publishing platforms.</p>
         <div class="about-credentials">
           <div class="credential">
             <div class="credential-icon">
@@ -1073,20 +1318,19 @@
           </div>
         </div>
         <div class="featured-book-info">
-          <span class="book-badge">&#9733; Bestseller</span>
+          <span class="book-badge">Signature Guided Journal</span>
           <h3>Nurturing the Soul</h3>
           <div class="book-author">by Tresjure Cross Mills</div>
-          <p class="book-description">Unleash your maximum potential through 30 days of guided self-reflection. This beautifully designed journal provides a quiet space for self-discovery, helping you embrace challenges and celebrate triumphs on the path to becoming your best self.</p>
+          <p class="book-description">A 30-day guided self-reflection journal created to help readers pause, process, and move forward with intention. Each page creates space for clarity, personal growth, and honest conversation with yourself.</p>
           <div class="book-meta">
             <div class="book-meta-item">
-              <span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-              <strong>5.0</strong> rating
+              <strong>30 days</strong> of guided reflection
             </div>
             <div class="book-meta-item">
-              <strong>Paperback</strong> &bull; 30-day guided journal
+              <strong>Paperback</strong> &bull; journaling prompts + mindset support
             </div>
           </div>
-          <div class="book-price">$10.10 <small>paperback</small></div>
+          <div class="book-price">Available on Amazon <small>shop the current edition</small></div>
           <a href="https://www.amazon.com/stores/Tresjure-Cross-Mills/author/B0D7QSCW2Z" target="_blank" class="btn-primary">
             Buy on Amazon
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
@@ -1105,7 +1349,7 @@
             <h4>Glow Mode: A 90-Day Fitness Journal</h4>
             <p class="desc">For the woman who moves with purpose. Track your movement, nutrition, mindset, and progress with daily check-ins, macro guidance, affirmations, and wellness reflections.</p>
             <div class="book-card-footer">
-              <span class="book-card-price">$12.99</span>
+              <span class="book-card-price">90-day journal</span>
               <span class="book-card-btn">Shop Now</span>
             </div>
           </div>
@@ -1120,10 +1364,67 @@
             <h4>Savvy Stationery Co — Notebooks</h4>
             <p class="desc">100 pages of college-ruled writing space in a classic 7.5 x 9.25 format. Perfect for school, work, or everyday notes. Available in multiple warm-toned cover designs.</p>
             <div class="book-card-footer">
-              <span class="book-card-price">$11.99</span>
+              <span class="book-card-price">Stationery collection</span>
               <span class="book-card-btn">Shop Now</span>
             </div>
           </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Ecosystem -->
+  <section class="ecosystem" id="connect">
+    <div class="ecosystem-inner">
+      <div class="section-header fade-in">
+        <div class="section-label">Connect &amp; Explore</div>
+        <h2>The Tresjure Ecosystem</h2>
+        <p>Discover the platforms, products, and services that make up the full Tresjure experience.</p>
+      </div>
+
+      <div class="ecosystem-grid">
+        <a href="https://www.amazon.com/stores/Tresjure-Cross-Mills/author/B0D7QSCW2Z" target="_blank" class="ecosystem-card fade-in">
+          <div>
+            <div class="ecosystem-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            </div>
+            <h3>Amazon Store</h3>
+            <p>Shop journals, planners, and notebook collections from Tresjure's published catalog in one place.</p>
+          </div>
+          <span>Shop the collection</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/trtresjurecrossmills" target="_blank" class="ecosystem-card fade-in">
+          <div>
+            <div class="ecosystem-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 1 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </div>
+            <h3>LinkedIn</h3>
+            <p>Follow Tresjure's professional profile for networking, speaking visibility, and creator updates.</p>
+          </div>
+          <span>Visit LinkedIn</span>
+        </a>
+
+        <a href="https://instagram.com/officialtresjure/" target="_blank" class="ecosystem-card fade-in">
+          <div>
+            <div class="ecosystem-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </div>
+            <h3>Instagram</h3>
+            <p>See brand moments, inspiration, and updates from the growing Tresjure community on social.</p>
+          </div>
+          <span>@officialtresjure</span>
+        </a>
+
+        <a href="https://shesosavvysocial.com" target="_blank" class="ecosystem-card fade-in">
+          <div>
+            <div class="ecosystem-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>
+            </div>
+            <h3>She So Savvy Social</h3>
+            <p>Explore Tresjure's beauty and styling brand for appointments, polished looks, and elevated personal-brand moments.</p>
+          </div>
+          <span>Book services</span>
         </a>
       </div>
     </div>
@@ -1143,7 +1444,7 @@
       <div class="section-header fade-in">
         <div class="section-label">Get In Touch</div>
         <h2>Contact</h2>
-        <p>Ready to connect? Reach out through any of these channels.</p>
+        <p>For speaking opportunities, collaborations, media features, customer questions, or brand partnerships, reach out through any of the channels below.</p>
       </div>
 
       <div class="contact-grid">
@@ -1170,11 +1471,19 @@
           <h4>Instagram</h4>
           <p>@officialtresjure</p>
         </a>
+
+        <a href="https://www.linkedin.com/in/trtresjurecrossmills" target="_blank" class="contact-card fade-in">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 1 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </div>
+          <h4>LinkedIn</h4>
+          <p>trtresjurecrossmills</p>
+        </a>
       </div>
 
       <div class="services-banner fade-in">
         <h3>She So Savvy Social</h3>
-        <p>Professional beauty and styling services. Book your appointment today!</p>
+        <p>Professional beauty and styling services from the broader Tresjure brand world. Book your appointment or connect for elevated personal-brand moments.</p>
         <a href="https://shesosavvysocial.com" target="_blank" class="btn-white">
           Book Now
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
@@ -1186,12 +1495,18 @@
   <!-- CTA -->
   <section class="cta-section">
     <div class="cta-inner fade-in">
-      <h2>Start Your Journey Today</h2>
-      <p>Whether you're looking for guided self-reflection, a fitness accountability partner, or just a beautiful notebook — Tresjure has something for you.</p>
-      <a href="https://www.amazon.com/stores/Tresjure-Cross-Mills/author/B0D7QSCW2Z" target="_blank" class="btn-primary">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-        Visit the Amazon Store
-      </a>
+      <h2>Start your next chapter with intention</h2>
+      <p>Whether you're here for guided reflection, wellness structure, speaking inquiries, or creator collaboration, Tresjure has a place for you to begin.</p>
+      <div class="cta-actions">
+        <a href="https://www.amazon.com/stores/Tresjure-Cross-Mills/author/B0D7QSCW2Z" target="_blank" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          Visit the Amazon Store
+        </a>
+        <a href="mailto:tresjuremills@gmail.com?subject=Collaboration%20Inquiry%20for%20Tresjure%20Cross%20Mills" class="btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          Inquire by Email
+        </a>
+      </div>
     </div>
   </section>
 
@@ -1203,6 +1518,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#books">Books</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="https://www.linkedin.com/in/trtresjurecrossmills" target="_blank">LinkedIn</a></li>
         <li><a href="https://shesosavvysocial.com" target="_blank">She So Savvy Social</a></li>
         <li><a href="https://www.amazon.com/stores/Tresjure-Cross-Mills/author/B0D7QSCW2Z" target="_blank">Amazon Store</a></li>
       </ul>
