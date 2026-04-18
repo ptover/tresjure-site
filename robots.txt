@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Host: tresjure.com
+Sitemap: https://tresjure.com/sitemap.xml
