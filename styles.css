@@ -1449,6 +1449,65 @@ main { display: block; }
   font-weight: 700;
 }
 
+.contact-platform-list {
+  gap: 16px;
+}
+
+.contact-platform-list li {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  padding-left: 0;
+}
+
+.contact-platform-list li::before {
+  content: none;
+}
+
+.platform-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: var(--shadow-card);
+}
+
+.platform-email {
+  background: linear-gradient(135deg, #8B6F4E 0%, #6B5438 100%);
+}
+
+.platform-phone {
+  background: linear-gradient(135deg, #31302e 0%, #2C2520 100%);
+}
+
+.platform-linkedin {
+  background: linear-gradient(135deg, #0A66C2 0%, #004182 100%);
+}
+
+.platform-instagram {
+  background: linear-gradient(135deg, #F58529 0%, #DD2A7B 45%, #8134AF 100%);
+}
+
+.platform-copy {
+  display: grid;
+  gap: 3px;
+}
+
+.platform-copy strong {
+  font-size: 13px;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  color: var(--color-dark);
+}
+
+.platform-copy a {
+  font-size: 16px;
+}
+
 .book-showcase {
   display: grid;
   grid-template-columns: 320px 1fr;
