@@ -114,6 +114,18 @@
       box-shadow: 0 10px 26px rgba(230,0,126,0.24);
     }
 
+    .btn-savvy-pink {
+      background: #ff1493 !important;
+      color: #ffffff !important;
+      box-shadow: 0 12px 30px rgba(255,20,147,0.24);
+    }
+
+    .btn-savvy-pink:hover {
+      background: #e6007e !important;
+      color: #ffffff !important;
+      box-shadow: 0 16px 36px rgba(230,0,126,0.3);
+    }
+
     .mobile-menu-btn {
       display: none;
       background: none;
